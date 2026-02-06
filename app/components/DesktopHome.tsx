@@ -1,6 +1,6 @@
 'use client';
 import { CldImage } from 'next-cloudinary';
-import Link from 'next/link';
+import NavBar from './NavBar';
 
 export function HeroImage() {
   return (
@@ -12,38 +12,9 @@ export function HeroImage() {
         crop="fill"
         gravity="auto"
         alt="Full screen portfolio background"
-        style={{objectFit: 'cover'}}
+        className='object-cover'
       />
-
-      {/* 2. The Text Overlay */}
-      <div style={{ 
-        position: 'relative', // Keeps it above the absolute-filled image
-        zIndex: 10, 
-        paddingTop: '20px',
-        paddingRight: '20px',
-        paddingLeft: '20px',
-        display: 'flex', 
-        justifyContent: 'space-between', 
-        height: '100%',
-        textAlign: 'center'
-      }}
-      >
-        <Link 
-          href="/about"
-          style={{textDecoration: "none", color: "black"}}
-          className="no-underline hover:underline"
-        >
-          <h2>
-            ABOUT
-          </h2>
-        </Link>
-        <h2>
-          KIERAN SLATER
-        </h2>
-        <h2>
-          INDEX
-        </h2>
-      </div>
+      <NavBar/>
     </div>
   );
 }
