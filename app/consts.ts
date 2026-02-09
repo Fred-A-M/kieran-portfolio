@@ -29,7 +29,10 @@ export const projects = [
     ],
     image: "IMG_0361_qpcjgt",
     gallery: [
-      {image: "/projects/Something/1.gif"},
+      {
+        image: "/projects/Something/1.gif",
+        caption: "CAPTION"
+      },
     ],
     link: "/work/trestles0625",
   },
@@ -41,7 +44,10 @@ export const projects = [
     ],
     image: "IMG_1867_ajbgi9",
     gallery: [
-      {image: "/projects/Something/1.gif"},
+      {
+        image: "/projects/Something/1.gif",
+        caption: "CAPTION"
+      },
     ],
     link: "/work/Hooks0325",
   },
@@ -53,7 +59,10 @@ export const projects = [
     ],
     image: "IMG_1810_yz7g7z",
     gallery: [
-      {image: "/projects/Something/1.gif"},
+      {
+        image: "/projects/Something/1.gif",
+        caption: "CAPTION"
+      },
     ],
     link: "/work/RidUnit1123",
   },
@@ -65,7 +74,10 @@ export const projects = [
     ],
     image: "MIRROR_w7ir21",
     gallery: [
-      {image: "/projects/Something/1.gif"},
+      {
+        image: "/projects/Something/1.gif",
+        caption: "CAPTION"
+      },
     ],
     link: "/work/Mirror0923",
   },
@@ -77,7 +89,10 @@ export const projects = [
     ],
     image: "Mudlark_DETAIL__Credit_Luke_Fullalove_txyxj3",
     gallery: [
-      {image: "/projects/Something/1.gif"},
+      {
+        image: "/projects/Something/1.gif",
+        caption: "CAPTION"
+      },
     ],
     link: "/work/MudlarkChair0823",
   },
@@ -89,7 +104,10 @@ export const projects = [
     ],
     image: "DSC00903_jueimw",
     gallery: [
-      {image: "/projects/Something/1.gif"},
+      {
+        image: "/projects/Something/1.gif",
+        caption: "CAPTION"
+      },
     ],
     link: "/work/Landrace0723",
   },
@@ -101,7 +119,10 @@ export const projects = [
     ],
     image: "EDIT1_e92h1s",
     gallery: [
-      {image: "/projects/Something/1.gif"},
+      {
+        image: "/projects/Something/1.gif",
+        caption: "CAPTION"
+      },
     ],
     link: "/work/something",
   },
@@ -113,7 +134,10 @@ export const projects = [
     ],
     image: "IMG_0515_qrxxws",
     gallery: [
-      {image: "/projects/Something/1.gif"},
+      {
+        image: "/projects/Something/1.gif",
+        caption: "CAPTION"
+      },
     ],
     link: "/work/something",
   },
@@ -125,7 +149,10 @@ export const projects = [
     ],
     image: "Store_inside_qcybl7",
     gallery: [
-      {image: "/projects/Something/1.gif"},
+      {
+        image: "/projects/Something/1.gif",
+        caption: "CAPTION"
+      },
     ],
     link: "/work/something",
   },
@@ -137,7 +164,10 @@ export const projects = [
     ],
     image: "IMG_0595_a5ol8j",
     gallery: [
-      {image: "/projects/Something/1.gif"},
+      {
+        image: "/projects/Something/1.gif",
+        caption: "CAPTION"
+      },
     ],
     link: "/work/something",
   },
@@ -149,7 +179,10 @@ export const projects = [
     ],
     image: "Chair7_b5cstj",
     gallery: [
-      {image: "/projects/Something/1.gif"},
+      {
+        image: "/projects/Something/1.gif",
+        caption: "CAPTION"
+      },
     ],
     link: "/work/something",
   },
@@ -161,7 +194,10 @@ export const projects = [
     ],
     image: "B3_sftj5w",
     gallery: [
-      {image: "/projects/Something/1.gif"},
+      {
+        image: "/projects/Something/1.gif",
+        caption: "CAPTION"
+      },
     ],
     link: "/work/something",
   },
@@ -173,7 +209,10 @@ export const projects = [
     ],
     image: "Mirror5_i0rjib",
     gallery: [
-      {image: "/projects/Something/1.gif"},
+      {
+        image: "/projects/Something/1.gif",
+        caption: "CAPTION"
+      },
     ],
     link: "/work/something",
   },
@@ -185,7 +224,10 @@ export const projects = [
     ],
     image: "Openspread_copy_akaktf",
     gallery: [
-      {image: "/projects/Something/1.gif"},
+      {
+        image: "/projects/Something/1.gif",
+        caption: "CAPTION"
+      },
     ],
     link: "/work/something",
   },
@@ -197,7 +239,10 @@ export const projects = [
     ],
     image: "Y6_kjzxb3",
     gallery: [
-      {image: "/projects/Something/1.gif"},
+      {
+        image: "/projects/Something/1.gif",
+        caption: "CAPTION"
+      },
     ],
     link: "/work/something",
   },
@@ -209,7 +254,10 @@ export const projects = [
     ],
     image: "Bench7_pzgyjh",
     gallery: [
-      {image: "/projects/Something/1.gif"},
+      {
+        image: "/projects/Something/1.gif",
+        caption: "CAPTION"
+      },
     ],
     link: "/work/something",
   },
@@ -222,7 +270,7 @@ export interface Project {
   image: string,
   gallery: {
     image: string, 
-    caption?: string,
+    caption: string,
     width?: number,
     height?: number,
     stylesWidth?: number,
