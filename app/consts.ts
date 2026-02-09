@@ -9,7 +9,7 @@ export const projects = [
     gallery: [
       {image: "/projects/Something/1.gif"},
     ],
-    link: "/work/something",
+    link: "/work/console0925",
   },
   {
     name: "Teaching Trestles",
@@ -21,7 +21,7 @@ export const projects = [
     gallery: [
       {image: "/projects/Something/1.gif"},
     ],
-    link: "/work/something",
+    link: "/work/trestles0625",
   },
   {
     name: "Hooks",
@@ -33,7 +33,7 @@ export const projects = [
     gallery: [
       {image: "/projects/Something/1.gif"},
     ],
-    link: "/work/something",
+    link: "/work/Hooks0325",
   },
   {
     name: "Rid Unit",
@@ -45,7 +45,7 @@ export const projects = [
     gallery: [
       {image: "/projects/Something/1.gif"},
     ],
-    link: "/work/something",
+    link: "/work/RidUnit1123",
   },
   {
     name: "Mirror",
@@ -57,7 +57,7 @@ export const projects = [
     gallery: [
       {image: "/projects/Something/1.gif"},
     ],
-    link: "/work/something",
+    link: "/work/Mirror0923",
   },
   {
     name: "Mudlark Chair",
@@ -69,7 +69,7 @@ export const projects = [
     gallery: [
       {image: "/projects/Something/1.gif"},
     ],
-    link: "/work/something",
+    link: "/work/MudlarkChair0823",
   },
   {
     name: "Landrace Upstairs",
@@ -81,7 +81,7 @@ export const projects = [
     gallery: [
       {image: "/projects/Something/1.gif"},
     ],
-    link: "/work/something",
+    link: "/work/Landrace0723",
   },
   {
     name: "Westcombe Dairy Mill Doors",
