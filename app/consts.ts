@@ -25,12 +25,19 @@ export const projects = [
     name: "Teaching Trestles",
     date: "06:2025",
     description: [
-      "Something",
+      "BIRCH PLYWOOD, ALUMINIUM, ACRYLIC",
+      "This cabinet combines warmth and precision through a restrained use of materials and detail. Constructed from birch plywood panels framed in brushed aluminium, the piece celebrates its structure rather than concealing it. Exposed fixings and clean lines highlight the junctions where natural wood meets industrial metal, creating a dialogue between craft and manufacture.",
+      "The acrylic doors introduce a sense of lightness and transparency, softening the cabinet’s geometric form while allowing the contents to become part of the visual composition. Balanced proportions and considered hardware give the piece a quiet, architectural presence — functional yet sculptural.",
+      "Designed and made by Kieran Slater in London, the cabinet reflects his ongoing exploration of honest materials, precise construction, and the space between utility and art.",
     ],
     image: "IMG_0361_qpcjgt",
     gallery: [
       {
-        image: "/projects/Something/1.gif",
+        image: "IMG_0361_qpcjgt",
+        caption: "CAPTION"
+      },
+      {
+        image: "IMG_0357_btr8ek",
         caption: "CAPTION"
       },
     ],
