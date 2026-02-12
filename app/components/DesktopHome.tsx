@@ -1,6 +1,6 @@
 'use client';
 import { CldImage } from 'next-cloudinary';
-import NavBar from './NavBar';
+// import NavBar from './NavBar';
 
 export function HeroImage() {
   return (
@@ -13,8 +13,8 @@ export function HeroImage() {
         gravity="auto"
         alt="Full screen portfolio background"
         className='object-cover'
+        preload
       />
-      <NavBar/>
     </div>
   );
 }

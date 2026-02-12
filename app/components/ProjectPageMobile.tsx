@@ -9,11 +9,11 @@ interface ProjectPageProps {
 export default function ProjectPageDesktop({project} : ProjectPageProps) {
 
   return (
-    <div className="relative flex justify-center items-center h-screen w-screen ">
-      <div className='flex items-stretch px-3 lg:px-[15vw] gap-10 lg:gap-[10vw] 2xl:w-[85%]'>
+    <div className="relative flex justify-center items-center h-screen w-screen text-xs">
+      <div className='flex items-stretch px-[10vw] gap-5 2xl:w-[85%] h-fit'>
         {project &&
-          <div className='w-1/2 flex gap-2 lg:gap-5'>
-            <div className='flex flex-col w-full'>
+          <div className='w-1/2 flex flex-col gap-2'>
+            <div className='flex flex-col flex-1'>
               <div className='relative grow'>
                 <CldImage
                   src={project.gallery[0].image}
@@ -25,7 +25,7 @@ export default function ProjectPageDesktop({project} : ProjectPageProps) {
               </div>
               <p className='mt-2'>{project.gallery[0].caption}</p>
             </div>
-            <div className='flex flex-col w-[70%] h-[70%]'>
+            <div className='flex flex-col flex-1'>
               <div className='relative grow'>
                 <CldImage
                   src={project.gallery[1].image}
@@ -47,4 +47,5 @@ export default function ProjectPageDesktop({project} : ProjectPageProps) {
       </div>
     </div>
   )
+
 }

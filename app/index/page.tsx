@@ -41,7 +41,7 @@ export default function Index() {
           >
             <Link className={`${group}`} href={project.link}>{index+1 < 10 && 0}{index+1}</Link>
             <Link className={`${group} text-right`} href={project.link}>{project.date}</Link>
-            <Link className={`${group} text-right col-span-3`} href={project.link}>{project.name}</Link>
+            <Link className={`${group} text-right col-span-3 uppercase`} href={project.link}>{project.name}</Link>
           </div>
         ))}
       </div>

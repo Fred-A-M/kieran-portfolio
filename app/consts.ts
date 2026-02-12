@@ -19,7 +19,7 @@ export const projects = [
         caption: "CAPTION"
       },
     ],
-    link: "/work/console0925",
+    link: "/work/console-0925",
   },
   {
     name: "Teaching Trestles",
@@ -41,37 +41,51 @@ export const projects = [
         caption: "CAPTION"
       },
     ],
-    link: "/work/trestles0625",
+    link: "/work/trestles-0625",
   },
   {
     name: "Hooks",
     date: "03:2025",
     description: [
-      "Something",
+      "BIRCH PLYWOOD, ALUMINIUM, ACRYLIC",
+      "This cabinet combines warmth and precision through a restrained use of materials and detail. Constructed from birch plywood panels framed in brushed aluminium, the piece celebrates its structure rather than concealing it. Exposed fixings and clean lines highlight the junctions where natural wood meets industrial metal, creating a dialogue between craft and manufacture.",
+      "The acrylic doors introduce a sense of lightness and transparency, softening the cabinet’s geometric form while allowing the contents to become part of the visual composition. Balanced proportions and considered hardware give the piece a quiet, architectural presence — functional yet sculptural.",
+      "Designed and made by Kieran Slater in London, the cabinet reflects his ongoing exploration of honest materials, precise construction, and the space between utility and art.",
     ],
     image: "IMG_1867_ajbgi9",
     gallery: [
       {
-        image: "/projects/Something/1.gif",
+        image: "IMG_1884_qzqi5p",
+        caption: "CAPTION"
+      },
+      {
+        image: "IMG_1894_dsxcis",
         caption: "CAPTION"
       },
     ],
-    link: "/work/Hooks0325",
+    link: "/work/hooks-0325",
   },
   {
     name: "Rid Unit",
     date: "11:2023",
     description: [
-      "Something",
+      "BIRCH PLYWOOD, ALUMINIUM, ACRYLIC",
+      "This cabinet combines warmth and precision through a restrained use of materials and detail. Constructed from birch plywood panels framed in brushed aluminium, the piece celebrates its structure rather than concealing it. Exposed fixings and clean lines highlight the junctions where natural wood meets industrial metal, creating a dialogue between craft and manufacture.",
+      "The acrylic doors introduce a sense of lightness and transparency, softening the cabinet’s geometric form while allowing the contents to become part of the visual composition. Balanced proportions and considered hardware give the piece a quiet, architectural presence — functional yet sculptural.",
+      "Designed and made by Kieran Slater in London, the cabinet reflects his ongoing exploration of honest materials, precise construction, and the space between utility and art.",
     ],
     image: "IMG_1810_yz7g7z",
     gallery: [
       {
-        image: "/projects/Something/1.gif",
+        image: "IMG_1820_mtynuv",
+        caption: "CAPTION"
+      },
+      {
+        image: "IMG_1696_qsq8rb",
         caption: "CAPTION"
       },
     ],
-    link: "/work/RidUnit1123",
+    link: "/work/ridunit-1123",
   },
   {
     name: "Mirror",
@@ -86,7 +100,7 @@ export const projects = [
         caption: "CAPTION"
       },
     ],
-    link: "/work/Mirror0923",
+    link: "/work/mirror-0923",
   },
   {
     name: "Mudlark Chair",
@@ -101,7 +115,7 @@ export const projects = [
         caption: "CAPTION"
       },
     ],
-    link: "/work/MudlarkChair0823",
+    link: "/work/mudlarkchair-0823",
   },
   {
     name: "Landrace Upstairs",
@@ -116,7 +130,7 @@ export const projects = [
         caption: "CAPTION"
       },
     ],
-    link: "/work/Landrace0723",
+    link: "/work/landrace-0723",
   },
   {
     name: "Westcombe Dairy Mill Doors",

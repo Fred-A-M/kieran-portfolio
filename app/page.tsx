@@ -2,10 +2,10 @@ import Main from "./main"
 
 export default function Home() {
   return (
-    <div className="">
-      <main className="">
+    <>
+      <main>
         <Main/>
       </main>
-    </div>
+    </>
   );
 }

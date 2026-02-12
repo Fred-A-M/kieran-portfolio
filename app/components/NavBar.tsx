@@ -3,7 +3,7 @@ import Link from 'next/link'
 export default function NavBar() {
 
   return(
-    <div className='absolute w-screen z-10 pt-2.5 px-2.5 flex justify-between text-center'>
+    <div className='absolute w-screen z-10 pt-3 px-3 flex justify-between text-center'>
       <Link 
         href='/about'
         className='hover:underline'
