@@ -46,7 +46,9 @@ export default function RootLayout({
       <body
         className={`${geistMono.className} antialiased text-sm`}
       >
-        <NavBar />
+        <div className={`text-base`}>
+          <NavBar />
+        </div>
         {children}
       </body>
     </html>

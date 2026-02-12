@@ -1,6 +1,5 @@
 'use client';
 import { CldImage } from 'next-cloudinary';
-import NavBar from './NavBar';
 
 export function HeroImage() {
   return (
@@ -15,7 +14,6 @@ export function HeroImage() {
         className='object-cover'
         preload
       />
-      <NavBar/>
     </div>
   );
 }
