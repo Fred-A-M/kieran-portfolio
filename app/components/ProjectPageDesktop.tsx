@@ -39,7 +39,7 @@ export default function ProjectPageDesktop({project} : ProjectPageProps) {
         }
         <div className='w-1/2 h-full flex flex-col'>
           {project?.description.map((paragraph, index) => (
-            <p className='last:mb-0 mb-5' key={index}>{paragraph}</p>
+            <p className='last:mb-0 mb-2 lg:mb-5' key={index}>{paragraph}</p>
           ))}
         </div>
       </div>
