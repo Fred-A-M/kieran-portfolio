@@ -12,6 +12,9 @@
   --font-mono: var(--font-geist-mono);
 }
 
+html, body {
+  cursor: url('/cursor.png'), auto;
+}
 
 body {
   background: var(--background);
