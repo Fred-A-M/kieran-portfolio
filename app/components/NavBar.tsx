@@ -21,7 +21,7 @@ export default function NavBar() {
         </h2>
       </Link>
       <Link
-        href='/index'
+        href='/work'
         className='hover:underline mt-auto'
       >
         <h2>
