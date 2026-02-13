@@ -1,15 +1,19 @@
 "use client";
 import { CldImage } from 'next-cloudinary';
 import { Project } from '../consts';
+import { useState } from 'react';
 
 interface ProjectPageProps {
   project: Project | undefined;
 }
 
 export default function ProjectPageDesktop({project} : ProjectPageProps) {
+  const [loadedCount, setLoadedCount] = useState(0);
+  const ready = loadedCount >= 2;
+
 
   return (
-    <div className="relative flex justify-center items-center h-screen w-screen ">
+    <div className={`relative flex justify-center items-center h-screen w-screen transition-opacity duration-200 ${ready ? "opacity-100" : "opacity-0"}`}>
       <div className='flex items-stretch px-3 lg:px-[15vw] gap-10 lg:gap-[10vw] 2xl:w-[85%] mt-10'>
         {project &&
           <div className='w-1/2 flex gap-2 lg:gap-5 pt-1'>
@@ -21,6 +25,7 @@ export default function ProjectPageDesktop({project} : ProjectPageProps) {
                   fill
                   className="object-cover"
                   preload
+                  onLoad={() => setLoadedCount(c => c + 1)}
                 />
               </div>
               <p className='mt-2'>{project.gallery[0].caption}</p>
@@ -33,6 +38,7 @@ export default function ProjectPageDesktop({project} : ProjectPageProps) {
                   fill
                   className="object-cover"
                   preload
+                  onLoad={() => setLoadedCount(c => c + 1)}
                 />
               </div>
               <p className='mt-2'>{project.gallery[1].caption}</p>

@@ -1,11 +1,10 @@
 'use client';
 import { CldImage } from 'next-cloudinary';
-// import NavBar from './NavBar';
+import { useState } from 'react';
 
-export function HeroImage() {
+export function HeroImage({ onReady }: { onReady: () => void }) {
   return (
     <div className="relative w-screen h-screen">
-      {/* 1. The Background Image */}
       <CldImage
         src="FULL_1515_nz2se2"
         fill
@@ -14,17 +13,20 @@ export function HeroImage() {
         alt="Full screen portfolio background"
         className='object-cover'
         preload
+        onLoad={onReady}
       />
     </div>
   );
 }
 
 export default function DesktopHome() {
-
+  const [ready, setReady] = useState(false);
 
   return (
-    <>
-      <HeroImage />
-    </>
+    <div
+      className={`transition-opacity duration-200 ${ready ? 'opacity-100' : 'opacity-0'}`}
+    >
+      <HeroImage onReady={() => setReady(true)} />
+    </div>
   );
 }
