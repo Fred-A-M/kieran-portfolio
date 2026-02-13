@@ -24,7 +24,7 @@ export default function DesktopHome() {
 
   return (
     <div
-      className={`transition-opacity duration-200 ${ready ? 'opacity-100' : 'opacity-0'}`}
+      className={`transition-opacity duration-300 ${ready ? 'opacity-100' : 'opacity-0'}`}
     >
       <HeroImage onReady={() => setReady(true)} />
     </div>
