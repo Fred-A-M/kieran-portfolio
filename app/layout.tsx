@@ -6,24 +6,24 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "KIERAN SLATER",
-  description: "Profession",
+  description: "Furniture Maker",
   metadataBase: new URL('https://www.something.com'),
   openGraph: {
-    title: 'Something',
-    description: 'Professional Something',
+    title: 'KIERAN SLATER',
+    description: 'Furniture Maker',
     images: [
       {
-        url: '/Something.jpg',
+        url: '/rat.png',
         width: 1200,
-        height: 629,
-        alt: 'Something - Professional Something',
+        height: 676,
+        alt: 'Kieran Slater - Very Good Boy',
       },
     ],
     type: 'website',
   },
   icons: {
-    icon: '/Something.jpg',
-    apple: '/Something.jpg',
+    icon: '/rat.png',
+    apple: '/rat.png',
   },
 };
 
