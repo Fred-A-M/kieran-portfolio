@@ -9,8 +9,8 @@ interface ProjectPageProps {
 export default function ProjectPageDesktop({project} : ProjectPageProps) {
 
   return (
-    <div className="relative flex justify-center items-center h-screen w-screen text-xs">
-      <div className='flex items-stretch px-[10vw] gap-5 2xl:w-[85%] h-fit'>
+    <div className="relative flex justify-center items-center h-screen w-screen">
+      <div className='flex items-stretch px-[10vw] gap-5 2xl:w-[85%] h-fit mt-9'>
         {project &&
           <div className='w-1/2 flex flex-col gap-2'>
             <div className='flex flex-col flex-1'>
