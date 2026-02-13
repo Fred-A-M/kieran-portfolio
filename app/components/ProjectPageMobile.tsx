@@ -10,9 +10,9 @@ export default function ProjectPageDesktop({project} : ProjectPageProps) {
 
   return (
     <div className="relative flex justify-center items-center h-screen w-screen">
-      <div className='flex items-stretch px-3 gap-5 h-fit mt-9'>
+      <div className='flex items-stretch px-3 gap-5 h-fit mt-10'>
         {project &&
-          <div className='w-1/2 flex flex-col gap-2'>
+          <div className='w-1/2 flex flex-col gap-2 pt-1'>
             <div className='flex flex-col flex-1'>
               <div className='relative grow'>
                 <CldImage

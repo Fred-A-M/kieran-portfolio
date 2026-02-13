@@ -3,10 +3,10 @@ import Link from 'next/link'
 export default function NavBar() {
 
   return(
-    <div className='absolute w-screen z-10 px-3 h-9 flex justify-between text-base'>
+    <div className='absolute w-screen z-10 px-3 h-10 flex justify-between items-center text-base'>
       <Link 
         href='/about'
-        className='hover:underline mt-auto'
+        className='hover:underline'
       >
         <h2>
           ABOUT
@@ -14,7 +14,7 @@ export default function NavBar() {
       </Link>
       <Link
         href='/'
-        className='hover:underline mt-auto'
+        className='hover:underline'
       >
         <h2>
           KIERAN SLATER
@@ -22,7 +22,7 @@ export default function NavBar() {
       </Link>
       <Link
         href='/work'
-        className='hover:underline mt-auto'
+        className='hover:underline'
       >
         <h2>
           INDEX
