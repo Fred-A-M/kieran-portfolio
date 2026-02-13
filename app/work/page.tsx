@@ -2,17 +2,20 @@
 import { projects } from "../consts";
 import { CldImage } from 'next-cloudinary';
 import { useState } from 'react';
+import { useIsMobile } from '../hooks/useIsMobile';
 import Link from 'next/link';
 
 
 export default function Index() {
   const group = 'group-hover:font-bold cursor-pointer';
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
+  const isMobile = useIsMobile();
 
   return (
     <div className="relative flex flex-col justify-center h-screen w-screen">
-      <div className="w-[70%] mx-auto grid grid-cols-5 relative mt-9">
+      <div className="w-full sm:w-[70%] mx-auto grid grid-cols-5 relative mt-9 px-3">
 
+       {!isMobile && 
         <div className="pointer-events-none absolute w-[400px] h-[300px] lg:w-[600px] lg:h-[400px] top-1/2 left-5/6 -translate-x-5/6 -translate-y-1/2 z-50">
           {projects.map((project, index) => (
             <div
@@ -31,6 +34,7 @@ export default function Index() {
             </div>
           ))}
         </div>
+        }
 
         {projects.map((project, index) => (
           <div 

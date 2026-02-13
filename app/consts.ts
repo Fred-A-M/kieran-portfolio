@@ -19,7 +19,7 @@ export const projects = [
         caption: "CAPTION"
       },
     ],
-    link: "/work/console-0925",
+    link: "/work-projects/console-0925",
   },
   {
     name: "Teaching Trestles",
@@ -41,7 +41,7 @@ export const projects = [
         caption: "CAPTION"
       },
     ],
-    link: "/work/trestles-0625",
+    link: "/work-projects/trestles-0625",
   },
   {
     name: "Hooks",
@@ -63,7 +63,7 @@ export const projects = [
         caption: "CAPTION"
       },
     ],
-    link: "/work/hooks-0325",
+    link: "/work-projects/hooks-0325",
   },
   {
     name: "Rid Unit",
@@ -85,7 +85,7 @@ export const projects = [
         caption: "CAPTION"
       },
     ],
-    link: "/work/ridunit-1123",
+    link: "/work-projects/ridunit-1123",
   },
   {
     name: "Mirror",
@@ -100,7 +100,7 @@ export const projects = [
         caption: "CAPTION"
       },
     ],
-    link: "/work/mirror-0923",
+    link: "/work-projects/mirror-0923",
   },
   {
     name: "Mudlark Chair",
@@ -115,7 +115,7 @@ export const projects = [
         caption: "CAPTION"
       },
     ],
-    link: "/work/mudlarkchair-0823",
+    link: "/work-projects/mudlarkchair-0823",
   },
   {
     name: "Landrace Upstairs",
@@ -130,7 +130,7 @@ export const projects = [
         caption: "CAPTION"
       },
     ],
-    link: "/work/landrace-0723",
+    link: "/work-projects/landrace-0723",
   },
   {
     name: "Westcombe Dairy Mill Doors",
@@ -145,7 +145,7 @@ export const projects = [
         caption: "CAPTION"
       },
     ],
-    link: "/work/something",
+    link: "/work-projects/something",
   },
   {
     name: "Cafe Doors",
@@ -160,7 +160,7 @@ export const projects = [
         caption: "CAPTION"
       },
     ],
-    link: "/work/something",
+    link: "/work-projects/something",
   },
   {
     name: "STORE Projects",
@@ -175,7 +175,7 @@ export const projects = [
         caption: "CAPTION"
       },
     ],
-    link: "/work/something",
+    link: "/work-projects/something",
   },
   {
     name: "Stool",
@@ -190,7 +190,7 @@ export const projects = [
         caption: "CAPTION"
       },
     ],
-    link: "/work/something",
+    link: "/work-projects/something",
   },
   {
     name: "Chair",
@@ -205,7 +205,7 @@ export const projects = [
         caption: "CAPTION"
       },
     ],
-    link: "/work/something",
+    link: "/work-projects/something",
   },
   {
     name: "Landrace Bakery",
@@ -220,7 +220,7 @@ export const projects = [
         caption: "CAPTION"
       },
     ],
-    link: "/work/something",
+    link: "/work-projects/something",
   },
   {
     name: "Mirror",
@@ -235,7 +235,7 @@ export const projects = [
         caption: "CAPTION"
       },
     ],
-    link: "/work/something",
+    link: "/work-projects/something",
   },
   {
     name: "Bed Shed",
@@ -250,7 +250,7 @@ export const projects = [
         caption: "CAPTION"
       },
     ],
-    link: "/work/something",
+    link: "/work-projects/something",
   },
   {
     name: "Corrugated Sideboard",
@@ -265,7 +265,7 @@ export const projects = [
         caption: "CAPTION"
       },
     ],
-    link: "/work/something",
+    link: "/work-projects/something",
   },
   {
     name: "Bench",
@@ -280,7 +280,7 @@ export const projects = [
         caption: "CAPTION"
       },
     ],
-    link: "/work/something",
+    link: "/work-projects/something",
   },
 ];
 
