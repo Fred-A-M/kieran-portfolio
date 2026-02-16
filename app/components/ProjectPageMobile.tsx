@@ -12,8 +12,8 @@ export default function ProjectPageDesktop({project} : ProjectPageProps) {
   const ready = loadedCount >= 2;
 
   return (
-    <div className={`relative flex justify-center items-center h-screen w-screen transition-opacity duration-300 ${ready ? "opacity-100" : "opacity-0"}`}>
-      <div className='flex items-stretch px-3 gap-5 h-fit mt-10'>
+    <div className={`relative flex justify-center items-center min-h-dvh w-screen transition-opacity duration-300 ${ready ? "opacity-100" : "opacity-0"}`}>
+      <div className='flex items-stretch px-3 gap-5 h-fit pt-10'>
         {project &&
           <div className='w-1/2 flex flex-col gap-2 pt-1'>
             <div className='flex flex-col flex-1'>
