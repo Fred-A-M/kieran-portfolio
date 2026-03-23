@@ -3,8 +3,8 @@ export const projects = [
     name: "Console",
     date: "09:2025",
     description: [
-      "A low sideboard unit designed to house records and a turntable.",
-      "Aluminium L section, clear acrylic and shuttering ply. With beech edge lipping and feet.",
+      "A low sideboard unit designed to house records and\u00A0a\u00A0turntable.",
+      "Aluminium L section, clear acrylic and shuttering ply. With beech edge lipping\u00A0and\u00A0feet.",
     ],
     image: "FULL_1515_nz2se2",
     gallery: [

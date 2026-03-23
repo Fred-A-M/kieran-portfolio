@@ -2,7 +2,7 @@
 import { projects } from "@/app/consts"
 import { useIsMobile } from '@/app/hooks/useIsMobile';
 import ProjectPage2Desktop from '@/app/components/ProjectPage2Desktop';
-import ProjectPageMobile from '@/app/components/ProjectPageMobile'
+import ProjectPage2Mobile from '@/app/components/ProjectPage2Mobile'
 
 export default function Console0925() {
 
@@ -12,7 +12,7 @@ export default function Console0925() {
   return(
     <>
       {isMobile ? (
-        <ProjectPageMobile project={project} />
+        <ProjectPage2Mobile project={project} />
       ) : (
         <ProjectPage2Desktop project={project} />
       )}

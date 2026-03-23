@@ -2,36 +2,41 @@
 import { CldImage } from 'next-cloudinary';
 import { Project } from '../consts';
 import { useState } from 'react';
+import { useSwipeable } from 'react-swipeable';
 
 interface ProjectPageProps {
   project: Project | undefined;
 }
 
-export default function ProjectPageDesktop({project} : ProjectPageProps) {
+export default function ProjectPageMobile({project} : ProjectPageProps) {
   const [firstImageLoaded, setFirstImageLoaded] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
   const ready = firstImageLoaded;
 
+  const handlers = useSwipeable({
+    onSwipedLeft: () => {
+      setCurrentIndex((prev) =>
+        prev === (project?.gallery.length || 1) - 1 ? 0 : prev + 1
+      );
+    },
+    onSwipedRight: () => {
+      setCurrentIndex((prev) =>
+        prev === 0 ? (project?.gallery.length || 1) - 1 : prev - 1
+      );
+    },
+    preventScrollOnSwipe: true,
+    trackMouse: true, // optional (lets you swipe with mouse on desktop)
+  });
+
 
   return (
     <div className={`relative flex flex-col justify-center items-center h-screen w-screen transition-opacity duration-300 ${ready ? "opacity-100" : "opacity-0"}`}>
-      <div className='flex flex-col text-center justify-center items-center w-[70%] lg:w-[50%]'>
-        <div className="relative w-full flex items-center justify-center mb-5">
+      <div className='flex flex-col text-center justify-center items-center'>
+        <div className="relative w-full flex items-center justify-center mb-2 lg:mb-5">
     
-          {/* LEFT BUTTON */}
-          <button
-            onClick={() =>
-              setCurrentIndex((prev) =>
-                prev === 0 ? (project?.gallery.length || 1) - 1 : prev - 1
-              )
-            }
-            className="absolute left-0 -translate-x-full pr-4 text-3xl hover:text-4xl"
-          >
-            {"<"}
-          </button>
 
           {/* CAROUSEL */}
-          <div className="relative w-[80%] h-[40vh] lg:h-[50vh]">
+          <div className="relative w-full h-[40vh] lg:h-[50vh]" {...handlers}>
             {project?.gallery.map((img, index) => (
               <div
                 key={index}
@@ -43,7 +48,7 @@ export default function ProjectPageDesktop({project} : ProjectPageProps) {
                   src={img.image}
                   alt={`Project image ${index}`}
                   fill
-                  className="object-contain"
+                  className="object-contain pointer-events-none"
                   onLoad={() => {
                     if (index === 0) setFirstImageLoaded(true);
                   }}
@@ -52,23 +57,9 @@ export default function ProjectPageDesktop({project} : ProjectPageProps) {
             ))}
           </div>
 
-          {/* RIGHT BUTTON */}
-          <button
-            onClick={() =>
-              setCurrentIndex((prev) =>
-                prev === (project?.gallery.length || 1) - 1 ? 0 : prev + 1
-              )
-            }
-            className="absolute right-0 translate-x-full pl-4 text-3xl hover:text-4xl"
-          >
-            {">"}
-          </button>
 
         </div>
-        <div className='flex flex-col gap-2 lg:gap-5'>
-          {/* {project?.description.map((paragraph, index) => (
-            <p className='last:mb-0 mb-2 lg:mb-5' key={index}>{paragraph}</p>
-          ))} */}
+        <div className='flex flex-col gap-2 lg:gap-5 w-[80%]'>
           <p className=''>{project?.description[0]}</p>
           <p className='uppercase'>{project?.description[1]}</p>
         </div>
