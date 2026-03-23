@@ -1,7 +1,7 @@
 "use client";
 import { projects } from "@/app/consts"
 import { useIsMobile } from '@/app/hooks/useIsMobile';
-import ProjectPageDesktop from '@/app/components/ProjectPageDesktop';
+import ProjectPage2Desktop from '@/app/components/ProjectPage2Desktop';
 import ProjectPageMobile from '@/app/components/ProjectPageMobile'
 
 export default function Console0925() {
@@ -14,7 +14,7 @@ export default function Console0925() {
       {isMobile ? (
         <ProjectPageMobile project={project} />
       ) : (
-        <ProjectPageDesktop project={project} />
+        <ProjectPage2Desktop project={project} />
       )}
     </>
   )

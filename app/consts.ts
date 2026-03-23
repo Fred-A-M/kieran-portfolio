@@ -3,10 +3,8 @@ export const projects = [
     name: "Console",
     date: "09:2025",
     description: [
-      "BIRCH PLYWOOD, ALUMINIUM, ACRYLIC",
-      "This cabinet combines warmth and precision through a restrained use of materials and detail. Constructed from birch plywood panels framed in brushed aluminium, the piece celebrates its structure rather than concealing it. Exposed fixings and clean lines highlight the junctions where natural wood meets industrial metal, creating a dialogue between craft and manufacture.",
-      "The acrylic doors introduce a sense of lightness and transparency, softening the cabinet’s geometric form while allowing the contents to become part of the visual composition. Balanced proportions and considered hardware give the piece a quiet, architectural presence — functional yet sculptural.",
-      "Designed and made by Kieran Slater in London, the cabinet reflects his ongoing exploration of honest materials, precise construction, and the space between utility and art.",
+      "A low sideboard unit designed to house records and a turntable.",
+      "Aluminium L section, clear acrylic and shuttering ply. With beech edge lipping and feet.",
     ],
     image: "FULL_1515_nz2se2",
     gallery: [
@@ -16,6 +14,18 @@ export const projects = [
       },
       {
         image: "DETAIL_1523_neofly",
+        caption: "CAPTION"
+      },
+      {
+        image: "DETAIL_1383_iwrmda",
+        caption: "CAPTION"
+      },
+      {
+        image: "FULL_1565_rj4phn",
+        caption: "CAPTION"
+      },
+      {
+        image: "FULL_1515_nz2se2",
         caption: "CAPTION"
       },
     ],
