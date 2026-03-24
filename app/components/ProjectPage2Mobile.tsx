@@ -31,8 +31,8 @@ export default function ProjectPageMobile({project} : ProjectPageProps) {
 
   return (
     <div className={`relative flex flex-col justify-center items-center h-screen w-screen transition-opacity duration-300 ${ready ? "opacity-100" : "opacity-0"}`}>
-      <div className='flex flex-col text-center justify-center items-center'>
-        <div className="relative w-full flex items-center justify-center mb-2 lg:mb-5">
+      <div className='flex flex-col text-center justify-center items-center gap-2 lg:gap-5'>
+        <div className="relative w-full flex flex-col items-center justify-center gap-2 lg:gap-5">
     
 
           {/* CAROUSEL */}
@@ -56,10 +56,22 @@ export default function ProjectPageMobile({project} : ProjectPageProps) {
               </div>
             ))}
           </div>
-
+          <div className="flex justify-center gap-2">
+            {project?.gallery.map((_, index) => (
+              <button
+                key={index}
+                onClick={() => setCurrentIndex(index)}
+                className={`h-1 w-1 rounded-full transition-all duration-300 ${
+                  index === currentIndex
+                    ? "bg-black"
+                    : "bg-gray-300 opacity-60"
+                }`}
+              />
+            ))}
+          </div>
 
         </div>
-        <div className='flex flex-col gap-2 lg:gap-5 w-[80%]'>
+        <div className='flex flex-col gap-2 mt-5 w-[80%]'>
           <p className=''>{project?.description[0]}</p>
           <p className='uppercase'>{project?.description[1]}</p>
         </div>
