@@ -6,7 +6,7 @@ import ProjectPageMobile from '@/app/components/ProjectPageMobile'
 
 export default function Landrace0723() {
 
-  const project = projects.find(project => project.name === "Landrace Upstairs");
+  const project = projects.find(project => project.link === "/work-projects/landrace-0723");
   const isMobile = useIsMobile();
 
   return(

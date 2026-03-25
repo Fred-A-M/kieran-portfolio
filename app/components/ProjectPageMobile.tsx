@@ -2,55 +2,81 @@
 import { CldImage } from 'next-cloudinary';
 import { Project } from '../consts';
 import { useState } from 'react';
+import { useSwipeable } from 'react-swipeable';
 
 interface ProjectPageProps {
   project: Project | undefined;
 }
 
-export default function ProjectPageDesktop({project} : ProjectPageProps) {
-  const [loadedCount, setLoadedCount] = useState(0);
-  const ready = loadedCount >= 2;
+export default function ProjectPageMobile({project} : ProjectPageProps) {
+  const [firstImageLoaded, setFirstImageLoaded] = useState(false);
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const ready = firstImageLoaded;
+
+  const handlers = useSwipeable({
+    onSwipedLeft: () => {
+      setCurrentIndex((prev) =>
+        prev === (project?.gallery.length || 1) - 1 ? 0 : prev + 1
+      );
+    },
+    onSwipedRight: () => {
+      setCurrentIndex((prev) =>
+        prev === 0 ? (project?.gallery.length || 1) - 1 : prev - 1
+      );
+    },
+    preventScrollOnSwipe: true,
+    trackMouse: true, // optional (lets you swipe with mouse on desktop)
+  });
+
 
   return (
-    <div className={`relative flex justify-center items-center min-h-dvh w-screen transition-opacity duration-300 ${ready ? "opacity-100" : "opacity-0"}`}>
-      <div className='flex items-stretch px-3 gap-5 h-fit pt-15'>
-        {project &&
-          <div className='w-1/2 flex flex-col gap-2 pt-1'>
-            <div className='flex flex-col flex-1'>
-              <div className='relative grow'>
+    <div className={`relative flex flex-col justify-center items-center h-screen w-screen transition-opacity duration-300 ${ready ? "opacity-100" : "opacity-0"}`}>
+      <div className='flex flex-col text-center justify-center items-center gap-2 lg:gap-5'>
+        <div className="relative w-full flex flex-col items-center justify-center gap-2 lg:gap-5">
+    
+
+          {/* CAROUSEL */}
+          <div className="relative w-full h-[40vh] lg:h-[50vh]" {...handlers}>
+            {project?.gallery.map((img, index) => (
+              <div
+                key={index}
+                className={`absolute inset-0 transition-opacity duration-500 ${
+                  index === currentIndex ? "opacity-100" : "opacity-0 pointer-events-none"
+                }`}
+              >
                 <CldImage
-                  src={project.gallery[0].image}
-                  alt='image'
+                  src={img.image}
+                  alt={`Project image ${index}`}
                   fill
-                  className="object-cover"
-                  preload
-                  onLoad={() => setLoadedCount(c => c + 1)}
+                  className="object-contain pointer-events-none"
+                  preload={index === 0}
+                  onLoad={() => {
+                    if (index === 0) setFirstImageLoaded(true);
+                  }}
                 />
               </div>
-              <p className='mt-2'>{project.gallery[0].caption}</p>
-            </div>
-            <div className='flex flex-col flex-1'>
-              <div className='relative grow'>
-                <CldImage
-                  src={project.gallery[1].image}
-                  alt='image'
-                  fill
-                  className="object-cover"
-                  preload
-                  onLoad={() => setLoadedCount(c => c + 1)}
-                />
-              </div>
-              <p className='mt-2'>{project.gallery[1].caption}</p>
-            </div>
+            ))}
           </div>
-        }
-        <div className='w-1/2 h-full flex flex-col'>
-          {project?.description.map((paragraph, index) => (
-            <p className='last:mb-0 mb-2 lg:mb-5' key={index}>{paragraph}</p>
-          ))}
+          <div className="flex justify-center gap-2">
+            {project?.gallery.map((_, index) => (
+              <button
+                key={index}
+                onClick={() => setCurrentIndex(index)}
+                className={`h-1 w-1 rounded-full transition-all duration-300 ${
+                  index === currentIndex
+                    ? "bg-black"
+                    : "bg-gray-300 opacity-60"
+                }`}
+              />
+            ))}
+          </div>
+
+        </div>
+        <div className='flex flex-col gap-2 mt-5 w-[80%]'>
+          <p className=''>{project?.description[0]}</p>
+          <p className='uppercase'>{project?.description[1]}</p>
         </div>
       </div>
     </div>
   )
-
 }

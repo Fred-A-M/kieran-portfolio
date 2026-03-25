@@ -6,7 +6,7 @@ import ProjectPageMobile from '@/app/components/ProjectPageMobile'
 
 export default function Mirror0923() {
 
-  const project = projects.find(project => project.name === "Mirror");
+  const project = projects.find(project => project.link === "/work-projects/mirror-0923");
   const isMobile = useIsMobile();
 
   return(

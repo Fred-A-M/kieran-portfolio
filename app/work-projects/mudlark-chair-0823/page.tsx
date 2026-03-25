@@ -6,7 +6,7 @@ import ProjectPageMobile from '@/app/components/ProjectPageMobile'
 
 export default function MudlarkChair0823() {
 
-  const project = projects.find(project => project.name === "Mudlark Chair");
+  const project = projects.find(project => project.link === "/work-projects/mudlark-chair-0823");
   const isMobile = useIsMobile();
 
   return(

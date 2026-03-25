@@ -6,7 +6,7 @@ import ProjectPageMobile from '@/app/components/ProjectPageMobile'
 
 export default function RidUnit1123() {
 
-  const project = projects.find(project => project.name === "Rid Unit");
+  const project = projects.find(project => project.link === "/work-projects/ridunit-1123");
   const isMobile = useIsMobile();
 
   return(

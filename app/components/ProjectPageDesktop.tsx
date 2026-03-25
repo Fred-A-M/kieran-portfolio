@@ -8,47 +8,88 @@ interface ProjectPageProps {
 }
 
 export default function ProjectPageDesktop({project} : ProjectPageProps) {
-  const [loadedCount, setLoadedCount] = useState(0);
-  const ready = loadedCount >= 2;
+  const [firstImageLoaded, setFirstImageLoaded] = useState(false);
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const ready = firstImageLoaded;
+  const pointers = project && project?.gallery.length > 1;
 
 
   return (
-    <div className={`relative flex justify-center items-center h-screen w-screen transition-opacity duration-300 ${ready ? "opacity-100" : "opacity-0"}`}>
-      <div className='flex items-stretch px-3 lg:px-[15vw] gap-10 lg:gap-[10vw] 2xl:w-[85%] pt-10'>
-        {project &&
-          <div className='w-1/2 flex gap-2 lg:gap-5 pt-1'>
-            <div className='flex flex-col w-full'>
-              <div className='relative grow'>
+    <div className={`relative flex flex-col justify-center items-center h-screen w-screen transition-opacity duration-300 ${ready ? "opacity-100" : "opacity-0"}`}>
+      <div className='flex flex-col text-center justify-center items-center gap-5 w-[70%] lg:w-[50%]'>
+        <div className="relative w-full flex items-center justify-center ">
+    
+          {/* LEFT BUTTON */}
+          {pointers && 
+            <button
+              onClick={() =>
+                setCurrentIndex((prev) =>
+                  prev === 0 ? (project?.gallery.length || 1) - 1 : prev - 1
+                )
+              }
+              className="absolute left-0 -translate-x-full pr-4 text-3xl hover:text-4xl"
+            >
+              ←
+            </button>
+          }
+
+          {/* CAROUSEL */}
+          <div className="relative w-[80%] h-[40vh] lg:h-[50vh]">
+            {project?.gallery.map((img, index) => (
+              <div
+                key={index}
+                className={`absolute inset-0 transition-opacity duration-500 ${
+                  index === currentIndex ? "opacity-100" : "opacity-0 pointer-events-none"
+                }`}
+              >
                 <CldImage
-                  src={project.gallery[0].image}
-                  alt='image'
+                  src={img.image}
+                  alt={`Project image ${index}`}
                   fill
-                  className="object-cover"
-                  preload
-                  onLoad={() => setLoadedCount(c => c + 1)}
+                  className="object-contain"
+                  preload={index === 0}
+                  onLoad={() => {
+                    if (index === 0) setFirstImageLoaded(true);
+                  }}
                 />
               </div>
-              <p className='mt-2'>{project.gallery[0].caption}</p>
-            </div>
-            <div className='flex flex-col w-[70%] h-[70%]'>
-              <div className='relative grow'>
-                <CldImage
-                  src={project.gallery[1].image}
-                  alt='image'
-                  fill
-                  className="object-cover"
-                  preload
-                  onLoad={() => setLoadedCount(c => c + 1)}
-                />
-              </div>
-              <p className='mt-2'>{project.gallery[1].caption}</p>
-            </div>
+            ))}
           </div>
-        }
-        <div className='w-1/2 h-full flex flex-col'>
-          {project?.description.map((paragraph, index) => (
-            <p className='last:mb-0 mb-2 lg:mb-5' key={index}>{paragraph}</p>
+
+          {/* RIGHT BUTTON */}
+
+          {pointers &&
+            <button
+              onClick={() =>
+                setCurrentIndex((prev) =>
+                  prev === (project?.gallery.length || 1) - 1 ? 0 : prev + 1
+                )
+              }
+              className="absolute right-0 translate-x-full pl-4 text-3xl hover:text-4xl"
+            >
+              →
+            </button>
+          }
+
+        </div>
+        <div className="flex justify-center items-center gap-2">
+          {project?.gallery.map((_, index) => (
+            <button
+              key={index}
+              onClick={() => setCurrentIndex(index)}
+              className={`h-1 w-1 rounded-full transition-all duration-300 ${
+                index === currentIndex
+                  ? "bg-black"
+                  : "bg-gray-300 opacity-60"
+              }`}
+            />
           ))}
+        </div>
+
+
+        <div className='flex flex-col gap-5 mt-5'>
+          <p className=''>{project?.description[0]}</p>
+          <p className='uppercase'>{project?.description[1]}</p>
         </div>
       </div>
     </div>

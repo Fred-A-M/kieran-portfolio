@@ -1,20 +1,20 @@
 "use client";
 import { projects } from "@/app/consts"
 import { useIsMobile } from '@/app/hooks/useIsMobile';
-import ProjectPage2Desktop from '@/app/components/ProjectPage2Desktop';
-import ProjectPage2Mobile from '@/app/components/ProjectPage2Mobile'
+import ProjectPageDesktop from '@/app/components/ProjectPageDesktop';
+import ProjectPageMobile from '@/app/components/ProjectPageMobile'
 
 export default function Console0925() {
 
-  const project = projects.find(project => project.name === "Console");
+  const project = projects.find(project => project.link === "/work-projects/console-0925");
   const isMobile = useIsMobile();
 
   return(
     <>
       {isMobile ? (
-        <ProjectPage2Mobile project={project} />
+        <ProjectPageMobile project={project} />
       ) : (
-        <ProjectPage2Desktop project={project} />
+        <ProjectPageDesktop project={project} />
       )}
     </>
   )

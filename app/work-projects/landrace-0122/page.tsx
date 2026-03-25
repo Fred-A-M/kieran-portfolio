@@ -4,9 +4,9 @@ import { useIsMobile } from '@/app/hooks/useIsMobile';
 import ProjectPageDesktop from '@/app/components/ProjectPageDesktop';
 import ProjectPageMobile from '@/app/components/ProjectPageMobile'
 
-export default function Hooks0325() {
+export default function Landrace0122() {
 
-  const project = projects.find(project => project.link === "/work-projects/hooks-0325");
+  const project = projects.find(project => project.link === "/work-projects/landrace-0122");
   const isMobile = useIsMobile();
 
   return(

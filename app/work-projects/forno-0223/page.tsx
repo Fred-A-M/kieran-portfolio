@@ -4,9 +4,9 @@ import { useIsMobile } from '@/app/hooks/useIsMobile';
 import ProjectPageDesktop from '@/app/components/ProjectPageDesktop';
 import ProjectPageMobile from '@/app/components/ProjectPageMobile'
 
-export default function WestcombeDairy0523() {
+export default function Forno0223() {
 
-  const project = projects.find(project => project.name === "Westcombe Dairy Mill Doors");
+  const project = projects.find(project => project.link === "/work-projects/forno-0223");
   const isMobile = useIsMobile();
 
   return(
