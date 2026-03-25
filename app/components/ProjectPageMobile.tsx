@@ -30,7 +30,7 @@ export default function ProjectPageMobile({project} : ProjectPageProps) {
 
 
   return (
-    <div className={`relative flex flex-col justify-center items-center h-screen w-screen transition-opacity duration-300 ${ready ? "opacity-100" : "opacity-0"}`}>
+    <div className={`relative flex flex-col justify-center items-center h-screen w-screen px-3 transition-opacity duration-300 ${ready ? "opacity-100" : "opacity-0"}`}>
       <div className='flex flex-col text-center justify-center items-center gap-2 lg:gap-5'>
         <div className="relative w-full flex flex-col items-center justify-center gap-2 lg:gap-5">
     
