@@ -7,17 +7,19 @@ export default function Carousel({
   setCurrentIndex,
   total,
   galleryLength,
+  desktop,
 }: { 
   children: React.ReactNode
   setCurrentIndex: React.Dispatch<React.SetStateAction<number>>;
   total: number;
   galleryLength: number;
+  desktop?: boolean;
 }) {
 
   const [isAnimating, setIsAnimating] = useState(false);
   const [isResetting, setIsResetting] = useState(false);
   const [offset, setOffset] = useState(0);
-  const pointers = galleryLength > 1;
+  const pointers = galleryLength > 1 && desktop;
 
 
   // Navigation
@@ -42,7 +44,7 @@ export default function Carousel({
 
   return (
     <>
-      {pointers && 
+      {pointers &&
         <button
           onClick={() =>
             goPrev()
@@ -54,7 +56,7 @@ export default function Carousel({
       }
 
       <div
-        className="relative min-w-[200%] h-[40vh] lg:h-[50vh] overflow-hidden z-10"
+        className="relative min-w-dvw h-[40vh] lg:h-[50vh] overflow-hidden z-10"
         {...handlers}
       >
         <div
