@@ -38,12 +38,12 @@ export default function ProjectPageMobile({ project }: ProjectPageProps) {
           galleryLength={project.gallery.length}
         >
           {items.map((index, i) => (
-            <div key={`${index}-${i}`} className="relative min-w-full h-full px-3">
+            <div key={`${index}-${i}`} className="relative min-w-full h-full">
               <CldImage
                 src={project.gallery[index].image}
                 alt={`Image ${index}`}
                 fill
-                className="object-contain pointer-events-none"
+                className="object-contain pointer-events-none px-3"
                 preload={index === currentIndex}
                 onLoad={() => {
                   if (index === 0) setFirstImageLoaded(true);
