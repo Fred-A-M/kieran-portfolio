@@ -6,7 +6,7 @@ import ProjectPageMobile from '@/app/components/ProjectPageMobile'
 
 export default function Console0925() {
 
-  const project = projects.find(project => project.name === "Trestles");
+  const project = projects.find(project => project.link === "/work-projects/trestles-0625");
   const isMobile = useIsMobile();
 
   return(
