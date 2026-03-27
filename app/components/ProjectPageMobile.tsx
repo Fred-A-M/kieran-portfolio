@@ -37,8 +37,8 @@ export default function ProjectPageMobile({ project }: ProjectPageProps) {
           total={total}
           galleryLength={project.gallery.length}
         >
-          {items.map((index) => (
-            <div key={index} className="relative min-w-full h-full px-3">
+          {items.map((index, i) => (
+            <div key={`${index}-${i}`} className="relative min-w-full h-full px-3">
               <CldImage
                 src={project.gallery[index].image}
                 alt={`Image ${index}`}

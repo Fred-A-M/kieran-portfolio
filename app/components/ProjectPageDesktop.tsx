@@ -33,9 +33,10 @@ export default function ProjectPageDesktop({project} : ProjectPageProps) {
             setCurrentIndex={setCurrentIndex}
             total={total}
             galleryLength={project.gallery.length}
+            desktop
           >
-            {items.map((index) => (
-              <div key={index} className="relative min-w-full h-full">
+            {items.map((index, i) => (
+              <div key={`${index}-${i}`} className="relative min-w-full h-full">
                 <CldImage
                   src={project.gallery[index].image}
                   alt={`Image ${index}`}
