@@ -39,40 +39,10 @@ export const projects = [
         image: "IMG_0361_qpcjgt",
       },
       {
-        image: "IMG_0357_btr8ek",
-      },
-      {
         image: "IMG_0353_mi9qga",
       },
       {
-        image: "IMG_0381_erotqt",
-      },
-      {
         image: "IMG_0356_abf7g8",
-      },
-      {
-        image: "IMG_0212_kyjjle",
-      },
-      {
-        image: "IMG_0182_g1dhhl",
-      },
-      {
-        image: "IMG_0185_x26fyu",
-      },
-      {
-        image: "IMG_0365_bdkljp",
-      },
-      {
-        image: "IMG_0337_vnem95",
-      },
-      {
-        image: "IMG_0211_fhxqvh",
-      },
-      {
-        image: "IMG_0176_fsppsq",
-      },
-      {
-        image: "IMG_0175_obphnt",
       },
     ],
     link: "/work-projects/trestles-0625",
@@ -87,9 +57,6 @@ export const projects = [
     image: "IMG_1867_ajbgi9",
     gallery: [
       {
-        image: "IMG_1884_qzqi5p",
-      },
-      {
         image: "IMG_1894_dsxcis",
       },
       {
@@ -97,9 +64,6 @@ export const projects = [
       },
       {
         image: "IMG_1867_ajbgi9",
-      },
-      {
-        image: "IMG_1885_fibi0x",
       },
       {
         image: "IMG_1861_ujaehu",
@@ -117,9 +81,6 @@ export const projects = [
     image: "IMG_1810_yz7g7z",
     gallery: [
       {
-        image: "IMG_1820_mtynuv",
-      },
-      {
         image: "IMG_1696_qsq8rb",
       },
       {
@@ -127,9 +88,6 @@ export const projects = [
       },
       {
         image: "IMG_1817_hacor0",
-      },
-      {
-        image: "IMG_1687_v9r2li",
       },
       {
         image: "IMG_1788_vcd9hp",
@@ -169,19 +127,10 @@ export const projects = [
         image: "DAY_THREE3722_b7ymd9",
       },
       {
-        image: "DAY_THREE3707_e49vvf",
-      },
-      {
         image: "DAY_THREE3667_da5pxb",
       },
       {
         image: "Mudlark_DETAIL__Credit_Luke_Fullalove_txyxj3",
-      },
-      {
-        image: "Mudlark__Credit_Luke_Fullalove_tjvcja",
-      },
-      {
-        image: "Mudlark-Chair-_Credit_Luke_Fullalove_ddbjvs",
       },
       {
         image: "Mudlark_FRONT__Credit_Luke_Fullalove_te69ui",
@@ -237,15 +186,6 @@ export const projects = [
       },
       {
         image: "IMG_2572_dcwcok",
-      },
-      {
-        image: "IMG_2753_rrfoyk",
-      },
-      {
-        image: "IMG_2619_hvxfqn",
-      },
-      {
-        image: "IMG_4890_pq1hv5",
       },
       {
         image: "IMG_2613_felwvf",
@@ -323,28 +263,10 @@ export const projects = [
         image: "EDIT2_copy_zcuz5v",
       },
       {
-        image: "EDIT5_izkjqo",
-      },
-      {
-        image: "EDIT4_auem7b",
-      },
-      {
-        image: "EDIT1_copy_dvsxo5",
-      },
-      {
         image: "EDIT2_l2s9rj",
       },
       {
         image: "EDIT3_zgyf2d",
-      },
-      {
-        image: "EDIT1_dhssdk",
-      },
-      {
-        image: "EDIT1_2_tb2bgm",
-      },
-      {
-        image: "EDIT2_2_plgiak",
       },
     ],
     link: "/work-projects/stool-0622",
@@ -368,12 +290,6 @@ export const projects = [
         image: "Chair3_nx2mei",
       },
       {
-        image: "Chair4_hyirel",
-      },
-      {
-        image: "Chair2_zl6kmf",
-      },
-      {
         image: "Chair5_bnpsfe",
       },
       {
@@ -395,13 +311,7 @@ export const projects = [
         image: "B3_sftj5w",
       },
       {
-        image: "B5_twmah5",
-      },
-      {
         image: "B1_fwmdhe",
-      },
-      {
-        image: "B4_gbzcij",
       },
       {
         image: "B2_uwinhu",
@@ -416,16 +326,10 @@ export const projects = [
       "Mirror with custom brackets to support\u00A0miter\u00A0joints.",
       "Sapele and aluminium.",
     ],
-    image: "Mirror5_i0rjib",
+    image: "Mirror1_sdttpw",
     gallery: [
       {
-        image: "Mirror5_i0rjib",
-      },
-      {
         image: "Mirror1_sdttpw",
-      },
-      {
-        image: "Mirror4_memw0d",
       },
       {
         image: "Mirror3_ol8br5",
@@ -446,25 +350,7 @@ export const projects = [
     image: "Openspread_copy_akaktf",
     gallery: [
       {
-        image: "BOOK_ubcphz",
-      },
-      {
-        image: "BOOK2_yxcfks",
-      },
-      {
-        image: "BOOK22_bjflz9",
-      },
-      {
-        image: "BOOK3_pzviod",
-      },
-      {
-        image: "SHEDRENDY1_utgnhz",
-      },
-      {
         image: "Openspread_copy_akaktf",
-      },
-      {
-        image: "Openspread_ozmdad",
       },
       {
         image: "Spreadaltoption_bq8hv3",
@@ -473,19 +359,10 @@ export const projects = [
         image: "Spreadaltoption2_vuo6so",
       },
       {
-        image: "Front_Cover_copy_vtadir",
-      },
-      {
         image: "Front_Cover2_meksbb",
       },
       {
-        image: "Spread2_tguo5k",
-      },
-      {
         image: "Spread3_wlqcye",
-      },
-      {
-        image: "Spread1_e2szlp",
       },
     ],
     link: "/work-projects/bedshed-0519",
@@ -507,15 +384,6 @@ export const projects = [
       },
       {
         image: "Y10_sknkca",
-      },
-      {
-        image: "Y4_wagx7h",
-      },
-      {
-        image: "Y7_b3m5ht",
-      },
-      {
-        image: "Y1_oowuhi",
       },
       {
         image: "Y11_szjyqj",
@@ -545,9 +413,6 @@ export const projects = [
         image: "Bench7_pzgyjh",
       },
       {
-        image: "Bench2_lpj1n4",
-      },
-      {
         image: "Bench8_tx9bzv",
       },
       {
@@ -555,15 +420,6 @@ export const projects = [
       },
       {
         image: "Bench4_lpglyj",
-      },
-      {
-        image: "Bench1_mppyuj",
-      },
-      {
-        image: "Bench6_aonlh6",
-      },
-      {
-        image: "Bench3_dg50uv",
       },
     ],
     link: "/work-projects/bench-0517",
@@ -613,32 +469,3 @@ export const profile = {
     {something: "Something - Something, Something - Something, Something - Something"},
   ]
 }
-
-export const projectsMobile = [
-  {
-    name: "Something",
-    client: "Something",
-    tagline: "Something",
-    description: [
-      "Something",
-      "We stepped in with the CPR Bra. The world’s first educational bra to bust the touch\u00A0taboo.",
-      "Something",
-      "Something",
-    ],
-    image: {image: "/projects/Something/Main.gif", width: 1080, height: 1080},
-    gallery: [
-       {image: "/projects/Something/1.gif"},
-       {image: "/projects/Something/2.png"},
-       {image: "/projects/Something/3.gif"},
-       {image: "/projects/Something/4.gif"},
-       {image: "/projects/Something/5.jpg"},
-       {image: "/projects/Something/6.png"},
-       {image: "/projects/Something/7.gif"},
-       {image: "/projects/Something/8.gif"},
-       {image: "/projects/Something/9.jpg"},
-       {image: "/projects/Something/10.jpg"},
-       {image: "/projects/Something/11.jpg"},
-    ],
-    link: "/work/something",
-  },
-];

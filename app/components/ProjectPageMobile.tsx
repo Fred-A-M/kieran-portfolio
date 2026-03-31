@@ -19,7 +19,6 @@ export default function ProjectPageMobile({ project }: ProjectPageProps) {
   const prevIndex = (currentIndex - 1 + total) % total;
   const nextIndex = (currentIndex + 1) % total;
 
-  // Preload neighbors (instant transitions)
   const items = [prevIndex, currentIndex, nextIndex];
 
   if (!project || total === 0) return null;

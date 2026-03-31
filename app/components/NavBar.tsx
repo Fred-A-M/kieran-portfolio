@@ -3,7 +3,7 @@ import Link from 'next/link'
 export default function NavBar() {
 
   return(
-    <div className='absolute w-screen z-10 px-3 h-10 flex justify-between items-center text-base'>
+    <div className='absolute w-screen z-10 px-3 h-10 flex justify-between items-center text-sm'>
       <Link 
         href='/about'
         className='hover:underline'
@@ -12,6 +12,7 @@ export default function NavBar() {
           ABOUT
         </h2>
       </Link>
+
       <Link
         href='/'
         className='hover:underline'
@@ -20,6 +21,7 @@ export default function NavBar() {
           KIERAN SLATER
         </h2>
       </Link>
+
       <Link
         href='/work'
         className='hover:underline'
