@@ -6,6 +6,7 @@ export default function NavBar() {
     <div className='absolute w-screen z-10 px-3 h-10 flex justify-between items-center text-sm'>
       <Link 
         href='/about'
+        className='hover:font-medium'
       >
         <h2>
           ABOUT
@@ -14,6 +15,7 @@ export default function NavBar() {
       
       <Link
         href='/'
+        className='hover:font-medium'
       >
         <h2>
           KIERAN SLATER
@@ -22,6 +24,7 @@ export default function NavBar() {
 
       <Link
         href='/work'
+        className='hover:font-medium'
       >
         <h2>
           INDEX

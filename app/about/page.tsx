@@ -20,7 +20,7 @@ export default function About() {
           ))}
           <Link 
             href="https://www.instagram.com/kieran.slater/"
-            className='w-[80%] lg:w-[50%] 2xl:w-[40%]'
+            className='w-[80%] lg:w-[50%] 2xl:w-[40%] hover:font-medium'
             target='_blank'
           >
             INSTAGRAM
