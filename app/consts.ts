@@ -1,3 +1,19 @@
+export const profile = {
+  image: "/Something.jpg",
+  background: [
+    "I’m a furniture designer and maker currently residing in London. My personal work focuses on the use of easily accessible and repurposed materials,\u00A0largely\u00A0timber.",
+    "I think objects should be honest, fun\u00A0and\u00A0simple.",
+    "Let me know if you agree, or if you’d like to discuss\u00A0a\u00A0project.",
+    "+44 7713 198106",
+    "contact@kieranjamesslater.co.uk",
+  ],
+  contact: [
+    "something@something.com",
+    "https://www.instagram.com/something/",
+    "https://www.linkedin.com/in/something/",
+  ],
+}
+
 export const projects = [
   {
     name: "Console",
@@ -443,29 +459,4 @@ export interface Project {
   }[];
   video?: string;
   link: string;
-}
-
-export const profile = {
-  image: "/Something.jpg",
-  background: [
-    "Kieran Slater is a London-based furniture maker dedicated to creating timeless, handcrafted pieces that blend contemporary design with traditional craftsmanship. Each piece is built with care, usingsustainably sourced materials and time-honoured joinery techniques to ensure beauty, integrity,\u00A0and\u00A0longevity.",
-    "Driven by a deep respect for natural materials and fine craftsmanship, Kieran’s work celebrates the individuality of wood — its textures, imperfections, and character. From bespoke commissions to limited collections, every design begins with an idea, a sketch, and a commitment to quality that\u00A0transcends\u00A0trends.",
-    "Kieran trained in furniture design and cabinetmaking before establishing his own workshop in London. His approach balances modern aesthetics with classic techniques, producing work that feels both grounded and refined — made to be lived with, not just\u00A0looked\u00A0at.",
-    "Whether creating a statement piece for a private home or fitting out a public space, Kieran works closely with clients to ensure each commission reflects their story, their space, and\u00A0their\u00A0values.",
-    "Furniture should be honest — made to last, made to be used, and made to\u00A0be\u00A0loved.",
-    "Workshop based in London, UK.\nServing clients across the UK and internationally.",
-  ],
-  contact: [
-    "something@something.com",
-    "https://www.instagram.com/something/",
-    "https://www.linkedin.com/in/something/",
-  ],
-  workedWith: [
-    {brands: "Something, Something, Something, Something, Something, Something, Something, Something, Something, Something."},
-    {charities: "Something, Something, Something, Something, Something, Something, Something, Something, Something, Something."}
-  ],
-  won: [
-    {something: "Something - Something, Something - Something, Something - Something"},
-    {something: "Something - Something, Something - Something, Something - Something"},
-  ]
 }
