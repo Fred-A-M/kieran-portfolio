@@ -2,6 +2,7 @@
 import { useRouter } from "next/navigation";
 import { useEffect, useState, useCallback } from "react";
 
+
 export default function Splash() {
   const router = useRouter();
   const [leaving, setLeaving] = useState(false);
@@ -47,7 +48,7 @@ export default function Splash() {
         ${leaving ? "opacity-0 delay-400" : "opacity-100"}
       `}
     >
-      <h1 className="text-4xl tracking-wide flex">
+      <h1 className="text-2xl tracking-wide flex">
         {"Welcome".split("").map((char, i) => (
           <span
             key={i}
