@@ -1,35 +1,52 @@
+'use client';
 import Link from 'next/link'
-
+import { usePathname } from 'next/navigation'
 export default function NavBar() {
+  const pathname = usePathname();
+  
+  if (pathname === '/') {
+    return null;
+  }
 
-  return(
+  return (
     <div className='absolute w-screen z-10 px-3 h-10 flex justify-between items-center text-sm'>
-      <Link 
-        href='/about'
-        className='hover:font-medium'
-      >
-        <h2>
-          ABOUT
-        </h2>
-      </Link>
+      {pathname !== '/about' ? (
+        <Link
+          href='/about'
+          className='hover:font-medium'
+        >
+          <h2>
+            ABOUT
+          </h2>
+        </Link> 
+        ) : (
+          <h2 className='font-medium'>
+            ABOUT
+          </h2>
+        )
+      }
       
-      <Link
-        href='/'
-        className='hover:font-medium'
-      >
-        <h2>
-          KIERAN SLATER
-        </h2>
-      </Link>
+      
+      <h2>
+        KIERAN SLATER
+      </h2>
+     
 
-      <Link
-        href='/work'
-        className='hover:font-medium'
-      >
-        <h2>
-          INDEX
-        </h2>
-      </Link>
+     {pathname !== '/work' ? (
+        <Link
+          href='/work'
+          className='hover:font-medium'
+        >
+          <h2>
+            INDEX
+          </h2>
+        </Link> 
+        ) : (
+          <h2 className='font-medium'>
+            INDEX
+          </h2>
+        )
+      }
     </div>
   )
 }
