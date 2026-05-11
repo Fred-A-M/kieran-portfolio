@@ -1,4 +1,4 @@
-import Splash from './components/Splash';
+import Splash3D from './components/Splash3D'
 
 
 
@@ -6,6 +6,6 @@ export default function Home() {
   
 
   return (
-    <Splash/>
+    <Splash3D/>
   );
 }
