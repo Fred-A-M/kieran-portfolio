@@ -47,7 +47,7 @@ export default function Splash() {
           className={`absolute drop-image ${imageLoaded ? "start" : ""}`}
         >
           <CldImage
-            src="DAY_THREE3657_jj89dy"
+            src="Chair7_b5cstj_eyr0bs"
             width={500}
             height={500}
             alt="Splash"
