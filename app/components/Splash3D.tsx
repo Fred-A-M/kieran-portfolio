@@ -63,14 +63,16 @@ export default function Splash() {
   }, [leaving, router]);
 
   useEffect(() => {
-    const handleScroll = () => goToWork();
+    const handleClick = () => goToWork();
 
-    window.addEventListener("wheel", handleScroll, { once: true });
-    window.addEventListener("touchmove", handleScroll, { once: true });
+    window.addEventListener("click", handleClick, { once: true });
+    // window.addEventListener("wheel", handleScroll, { once: true });
+    // window.addEventListener("touchmove", handleScroll, { once: true });
 
     return () => {
-      window.removeEventListener("wheel", handleScroll);
-      window.removeEventListener("touchmove", handleScroll);
+      window.removeEventListener("click", handleClick);
+      // window.removeEventListener("wheel", handleScroll);
+      // window.removeEventListener("touchmove", handleScroll);
     };
   }, [goToWork]);
 
@@ -80,13 +82,18 @@ export default function Splash() {
       className={`
         relative h-screen w-screen overflow-hidden
         transition-opacity duration-500 flex flex-col justify-center items-center
-        ${leaving ? "opacity-0" : "opacity-100"}
-        ${loaded ? "opacity-100" : "opacity-0"}
+        ${loaded && !leaving ? "opacity-100" : "opacity-0"}
       `}
     >
       {/* 3D Background */}
       <div className="h-[70dvh]">
-        <Canvas camera={{ position: [0, 0, 5], fov: 50 }}>
+        <Canvas 
+          className={`
+            transition-opacity duration-500
+            ${loaded && !leaving ? "opacity-100" : "opacity-0"}
+          `}
+          camera={{ position: [0, 0, 5], fov: 50 }}
+        >
           <Loader onLoaded={() => setLoaded(true)} />
           {/* Lighting */}
           <ambientLight intensity={1.2} />
@@ -107,11 +114,7 @@ export default function Splash() {
       </div>
       <div className="flex items-center justify-center pointer-events-none">
         <h1
-          className={`
-            text-2xl 
-            transition-all duration-700
-            ${leaving ? "opacity-0 translate-y-10" : "opacity-100"}
-          `}
+          className="text-2xl"
         >
           Welcome
         </h1>
