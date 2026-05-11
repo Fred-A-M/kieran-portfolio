@@ -52,6 +52,7 @@ export default function Splash() {
             height={500}
             alt="Splash"
             preload
+            className='p-[80px]'
             onLoad={() => {
               setTimeout(() => setImageLoaded(true), 50);
             }}
