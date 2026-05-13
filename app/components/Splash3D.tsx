@@ -59,20 +59,16 @@ export default function Splash() {
 
     setTimeout(() => {
       router.push("/work");
-    }, 500);
+    }, 1000);
   }, [leaving, router]);
 
   useEffect(() => {
     const handleClick = () => goToWork();
 
     window.addEventListener("click", handleClick, { once: true });
-    // window.addEventListener("wheel", handleScroll, { once: true });
-    // window.addEventListener("touchmove", handleScroll, { once: true });
 
     return () => {
       window.removeEventListener("click", handleClick);
-      // window.removeEventListener("wheel", handleScroll);
-      // window.removeEventListener("touchmove", handleScroll);
     };
   }, [goToWork]);
 
@@ -81,15 +77,15 @@ export default function Splash() {
       onClick={goToWork}
       className={`
         relative h-screen w-screen overflow-hidden
-        transition-opacity duration-500 flex flex-col justify-center items-center
+        transition-opacity duration-1000 flex flex-col justify-center items-center
         ${loaded && !leaving ? "opacity-100" : "opacity-0"}
       `}
     >
       {/* 3D Background */}
-      <div className="h-[70dvh]">
+      <div className="h-[70dvh] w-full">
         <Canvas 
           className={`
-            transition-opacity duration-500
+            transition-opacity duration-1000
             ${loaded && !leaving ? "opacity-100" : "opacity-0"}
           `}
           camera={{ position: [0, 0, 5], fov: 50 }}
@@ -114,9 +110,8 @@ export default function Splash() {
       </div>
       <div className="flex items-center justify-center pointer-events-none">
         <h1
-          className="text-2xl"
         >
-          Welcome
+          WELCOME
         </h1>
       </div>
     </div>

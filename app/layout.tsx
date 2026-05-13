@@ -35,10 +35,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${americaMono.variable} ${geistMono.variable} ${americaMono.className} antialiased text-xs sm:text-sm`}
+        className={`${americaMono.variable} ${geistMono.variable} ${americaMono.className} antialiased text-xs sm:text-sm min-h-dvh flex flex-col overflow-x-hidden`}
       >
         <NavBar />
-        {children}
+        <main className="flex-1 overflow-x-hidden">
+          {children}
+        </main>
       </body>
     </html>
   );

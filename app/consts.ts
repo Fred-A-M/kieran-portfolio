@@ -449,13 +449,6 @@ export interface Project {
   image: string,
   gallery: {
     image: string, 
-    caption?: string,
-    width?: number,
-    height?: number,
-    stylesWidth?: number,
-    mp4?: string,
-    webm?: string,
-    gif?: string,
   }[];
   video?: string;
   link: string;

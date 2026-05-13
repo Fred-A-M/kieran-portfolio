@@ -9,7 +9,7 @@ export default function NavBar() {
   }
 
   return (
-    <div className='absolute w-screen z-10 px-3 h-10 flex justify-between items-center text-sm'>
+    <div className='w-screen z-10 px-3 h-10 flex justify-between items-center'>
       {pathname !== '/about' ? (
         <Link
           href='/about'

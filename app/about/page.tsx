@@ -8,8 +8,8 @@ export default function About() {
   const [imageLoaded, setImageLoaded] = useState(false);
 
   return (
-    <div className={`relative w-screen min-h-dvh flex justify-center transition-opacity duration-300 ${imageLoaded ? "opacity-100" : "opacity-0"}`}>
-        <div className="flex flex-col items-center justify-center pt-15 sm:pt-10 gap-5">
+    <div className={`relative w-screen min-h-[calc(100dvh-5rem)] mt-10 flex justify-center transition-opacity duration-300 ${imageLoaded ? "opacity-100" : "opacity-0"}`}>
+        <div className="flex flex-col items-center justify-center gap-5">
           {profile.background.map((line, index) => (
             <p 
               className='w-[80%] lg:w-[50%] 2xl:w-[40%]'

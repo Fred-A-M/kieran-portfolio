@@ -56,7 +56,7 @@ export default function Carousel({
       }
 
       <div
-        className="relative min-w-dvw h-[40vh] lg:h-[50vh] overflow-hidden z-10"
+        className="relative min-w-dvw h-[40vh] sm:h-[70vh] overflow-hidden z-10"
         {...handlers}
       >
         <div

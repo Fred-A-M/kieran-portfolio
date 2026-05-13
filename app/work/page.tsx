@@ -14,7 +14,7 @@ export default function Index() {
 
   return (
     <FadeInPage>
-      <div className="relative flex flex-col justify-center h-screen w-screen">
+      <div className="relative flex flex-col justify-center min-h-[calc(100dvh-2.5rem)] w-screen">
         <div className="w-full sm:w-[70%] mx-auto grid grid-cols-5 relative px-3">
 
         {!isMobile && 
