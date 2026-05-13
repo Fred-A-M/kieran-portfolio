@@ -1,9 +1,9 @@
 "use client";
 
 import { Canvas, useFrame } from "@react-three/fiber";
-import { useGLTF, useProgress } from "@react-three/drei";
+import { useGLTF, useProgress, OrbitControls } from "@react-three/drei";
 import { useRouter } from "next/navigation";
-import { useCallback, useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import * as THREE from "three";
 
 function RotatingModel() {
@@ -52,7 +52,7 @@ export default function Splash() {
   const [leaving, setLeaving] = useState(false);
   const [loaded, setLoaded] = useState(false);
 
-  const goToWork = useCallback(() => {
+  const goToWork = () => {
     if (leaving) return;
 
     setLeaving(true);
@@ -60,21 +60,10 @@ export default function Splash() {
     setTimeout(() => {
       router.push("/work");
     }, 1000);
-  }, [leaving, router]);
-
-  useEffect(() => {
-    const handleClick = () => goToWork();
-
-    window.addEventListener("click", handleClick, { once: true });
-
-    return () => {
-      window.removeEventListener("click", handleClick);
-    };
-  }, [goToWork]);
+  };
 
   return (
     <div
-      onClick={goToWork}
       className={`
         relative h-screen w-screen overflow-hidden
         transition-opacity duration-1000 flex flex-col justify-center items-center
@@ -104,15 +93,26 @@ export default function Splash() {
             intensity={1}
           />
 
+          <OrbitControls
+            enableZoom={false}
+            enablePan={false}
+            minPolarAngle={Math.PI / 3.0}
+            maxPolarAngle={Math.PI / 1.0}
+            rotateSpeed={0.8}
+          />
+
           {/* Model */}
           <RotatingModel />
         </Canvas>
       </div>
-      <div className="flex items-center justify-center pointer-events-none">
-        <h1
+      <div 
+        className="flex items-center justify-center hover:font-medium"
+      >
+        <button
+          onClick={goToWork}
         >
-          WELCOME
-        </h1>
+          ENTER
+        </button>
       </div>
     </div>
   );
