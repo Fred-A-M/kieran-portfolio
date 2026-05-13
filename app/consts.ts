@@ -1,16 +1,10 @@
 export const profile = {
-  image: "/Something.jpg",
   background: [
     "I’m a furniture designer and maker currently residing in London. My personal work focuses on the use of easily accessible and repurposed materials,\u00A0largely\u00A0timber.",
     "I think objects should be honest, fun\u00A0and\u00A0simple.",
     "Let me know if you agree, or if you’d like to discuss\u00A0a\u00A0project.",
     "+44 7713 198106",
     "contact@kieranjamesslater.co.uk",
-  ],
-  contact: [
-    "something@something.com",
-    "https://www.instagram.com/something/",
-    "https://www.linkedin.com/in/something/",
   ],
 }
 

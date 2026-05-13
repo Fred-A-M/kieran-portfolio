@@ -7,7 +7,7 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "KIERAN SLATER",
   description: "Furniture Maker",
-  metadataBase: new URL('https://www.something.com'),
+  metadataBase: new URL('https://www.NAMEOFKIERANSWEBSITE.com'),
   openGraph: {
     title: 'KIERAN SLATER',
     description: 'Furniture Maker',
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
         url: '/rat.png',
         width: 1200,
         height: 676,
-        alt: 'Kieran Slater - Very Good Boy',
+        alt: 'Kieran Slater - Furniture Maker',
       },
     ],
     type: 'website',
