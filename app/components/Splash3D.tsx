@@ -65,7 +65,7 @@ export default function Splash() {
   return (
     <div
       className={`
-        relative h-screen w-screen overflow-hidden
+        relative min-h-dvh w-screen overflow-hidden
         transition-opacity duration-1000 flex flex-col justify-center items-center
         ${loaded && !leaving ? "opacity-100" : "opacity-0"}
       `}
