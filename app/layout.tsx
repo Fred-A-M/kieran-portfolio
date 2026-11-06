@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     description: 'Furniture Maker',
     images: [
       {
-        url: '/KS_Monogram.svg',
+        url: '/KS.jpeg',
         width: 1200,
         height: 676,
         alt: 'Kieran Slater - Furniture Maker',
