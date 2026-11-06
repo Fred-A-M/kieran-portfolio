@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     description: 'Furniture Maker',
     images: [
       {
-        url: '/rat.png',
+        url: '/KS_Monogram.svg',
         width: 1200,
         height: 676,
         alt: 'Kieran Slater - Furniture Maker',
@@ -22,8 +22,8 @@ export const metadata: Metadata = {
     type: 'website',
   },
   icons: {
-    icon: '/rat.png',
-    apple: '/rat.png',
+    icon: '/KS_Monogram.svg',
+    apple: '/KS_Monogram.svg',
   },
 };
 
@@ -35,7 +35,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${americaMono.variable} ${geistMono.variable} ${americaMono.className} antialiased text-xs sm:text-sm min-h-dvh flex flex-col overflow-x-hidden`}
+        className={`${americaMono.variable} ${geistMono.variable} ${americaMono.className} antialiased text-xs min-h-dvh flex flex-col overflow-x-hidden`}
       >
         <NavBar />
         <main className="flex-1 overflow-x-hidden">
