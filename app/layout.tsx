@@ -14,8 +14,8 @@ export const metadata: Metadata = {
     images: [
       {
         url: '/KS.jpeg',
-        width: 1200,
-        height: 676,
+        width: 675,
+        height: 437,
         alt: 'Kieran Slater - Furniture Maker',
       },
     ],
